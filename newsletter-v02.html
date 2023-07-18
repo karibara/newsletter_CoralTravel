@@ -1,0 +1,294 @@
+<!-- the best option for email client compability -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+    <!-- compatibility for Microsoft Edge -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <!-- meta tag recomended for Mobile Devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>CoralTravel HTML Email Newsletter V02</title>
+
+    <!-- use an internal stylesheet and then styles inline for best email client compability -->
+    <style type="text/css">
+      @import url("https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;700&display=swap");
+
+      body {
+        margin: 0;
+        background-color: #f7f7f7;
+      }
+
+      /* table are still the best option for email compatibility - email applications render emails in different ways than a browser*/
+      table {
+        border-spacing: 0;
+      }
+
+      td {
+        padding: 0;
+      }
+      img {
+        border: 0;
+      }
+
+      .wrapper {
+        width: 100%;
+        table-layout: fixed;
+        background-color: #fefefe;
+        /* padding-bottom: 60px; */
+
+        margin: 0 auto;
+        width: 100%;
+        /* standard size for email design */
+        max-width: 600px;
+        border-spacing: 0;
+        font-family: "Urbanist", sans-serif;
+        color: #42484a;
+      }
+
+      .btn-cta {
+        background-color: #f27c38;
+        border-radius: 28px;
+        display: inline-block;
+        cursor: pointer;
+        color: #fefefe;
+        font-family: "Urbanist", sans-serif;
+        font-size: 16px;
+        font-weight: 500;
+        padding: 16px 30px;
+        text-decoration: none;
+        border: 0px;
+      }
+      .btn-cta:hover {
+        background-color: #e6590e;
+      }
+      .btn-cta:active {
+        position: relative;
+        top: 1px;
+      }
+
+      .two-cards {
+        text-align: center;
+        font-size: 0;
+        padding: 16px 0;
+      }
+
+      .two-cards .card {
+        width: 100%;
+        max-width: 265px;
+        margin: 16px;
+        display: inline-block;
+        vertical-align: top;
+      }
+
+      .footer {
+        text-align: center;
+        padding-top: 32px;
+        background-color: #f7f7f7;
+        color: #999999;
+      }
+
+      .footer a {
+        color: #999999;
+        text-decoration: none;
+        background-color: #f7f7f7;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- center tag is from html 4 but is is still usefull in email design -->
+
+    <table class="wrapper" width="100%">
+      <!-- LOGO SECTION -->
+      <tr>
+        <td>
+          <table width="100%">
+            <td style="padding: 32px">
+              <a href="https://www.coraltravel.pl/">
+                <img
+                  src="https://www.coraltravel.pl/rwd_menu_main_seo_new/assets/img/30ycoraltravel_new.png?v=20230717607"
+                  alt="Coral Travel logo"
+                  height="36px"
+                />
+              </a>
+            </td>
+          </table>
+        </td>
+      </tr>
+
+      <!-- TITLE & TEXT -->
+      <tr>
+        <td>
+          <h1 style="margin: 16px 32px; font-weight: 500">
+            Słońce przez 300 dni w roku?
+          </h1>
+          <p style="margin: 32px 62px 32px 32px">
+            Gwarancja dobrej pogody na wyciągnięcie ręki.
+            <br />
+            Nie wahaj się więc dłużej i zdecyduj się na wakacje w
+            <b> Turcji</b>. <br />
+            Będzie to niezapomniane doświadczenie pełne pięknych miejsc, smaków
+            i przygód.
+          </p>
+        </td>
+      </tr>
+
+      <!-- BUTTON CTA -->
+      <tr>
+        <td style="padding: 32px">
+          <a
+            href="https://www.coraltravel.pl/wczasy/wyniki-wyszukiwania/panstwo:Turcja:3/termin:01.04.2023+do+31.10.2023/dorosli:2/noce:7+do+14/60"
+          >
+            <button class="btn-cta">Sprawdź</button>
+          </a>
+        </td>
+      </tr>
+
+      <!-- TWO CARDS SECTION - Fethiye & Alanya-->
+      <tr>
+        <td>
+          <table width="100%">
+            <tr>
+              <td class="two-cards">
+                <table class="card">
+                  <tr>
+                    <td>
+                      <a
+                        href="https://www.coraltravel.pl/wakacje/Turcja/Fethiye"
+                      >
+                        <img
+                          src="https://i.ibb.co/B2sLRVj/simple-card-fethiye.png"
+                          alt="paragliders flying over the sea"
+                        />
+                      </a>
+                    </td>
+                  </tr>
+                </table>
+
+                <table class="card">
+                  <tr>
+                    <td>
+                      <a
+                        href="https://www.coraltravel.pl/wakacje/Turcja/Alanya"
+                      >
+                        <img
+                          src="https://i.ibb.co/WKPw5Pf/simple-card-alanya.png"
+                          alt="sea and mountains"
+                        />
+                      </a>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+
+      <!-- TWO CARDS SECTION - Side & Marmaris-->
+      <tr>
+        <td>
+          <table width="100%">
+            <tr>
+              <td class="two-cards">
+                <table class="card">
+                  <tr>
+                    <td>
+                      <a href="https://www.coraltravel.pl/wakacje/Turcja/Side">
+                        <img
+                          src="https://i.ibb.co/g6wBW89/simple-card-side.png"
+                          alt="ancient ruins"
+                        />
+                      </a>
+                    </td>
+                  </tr>
+                </table>
+
+                <table class="card">
+                  <tr>
+                    <td>
+                      <a
+                        href="https://www.coraltravel.pl/wakacje/Turcja/Marmaris"
+                      >
+                        <img
+                          src="https://i.ibb.co/bLLmLn7/simple-card-marmaris.png"
+                          alt="sea, beach and mountains"
+                        />
+                      </a>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+
+      <!-- FOOTER SECTION -->
+      <tr>
+        <td class="footer">
+          <table width="100%">
+            <tr>
+              <td>
+                <a href="https://www.instagram.com/coraltravelpoland/">
+                  <img
+                    src="https://i.ibb.co/pPM3zD8/grey-instagram.png"
+                    alt="instagram"
+                    height="24px"
+                    style="margin: 8px 8px"
+                  />
+                </a>
+                <a
+                  href="https://www.youtube.com/channel/UCHSdVK6Tcn840Kj-8yqEDiw"
+                >
+                  <img
+                    src="https://i.ibb.co/dK9CVjz/grey-youtube.png"
+                    alt="youtube"
+                    height="24px"
+                    style="margin: 8px 8px"
+                  />
+                </a>
+                <a href="https://www.facebook.com/coraltravelpoland/?ref=br_rs">
+                  <img
+                    src="https://i.ibb.co/WBk5S55/grey-facebook.png"
+                    alt="facebook"
+                    height="24px"
+                    style="margin: 8px 8px"
+                  />
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a href="https://www.coraltravel.pl/">
+                  <p>© Coral Travel Poland Sp. z o.o., 2023</p>
+                </a>
+                <p style="font-size: 12px; margin: 0 24px">
+                  Opublikowane na stronach internetowych www.coraltravel.pl
+                  materiały, informacje lub ceny nie stanowią oferty w
+                  rozumieniu przepisów kodeksu cywilnego.
+                </p>
+                <a
+                  href="mailto:rodo@coraltravel.pl"
+                  style="text-decoration: underline"
+                >
+                  <p>anuluj subskrybcję</p>
+                </a>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
